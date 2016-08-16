@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flushmode',['FlushMode',['../classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19',1,'kudu::client::KuduSession']]]
+  ['datatype',['DataType',['../classkudu_1_1client_1_1_kudu_column_schema.html#aba69238e70af5c887a4fb11fa2a120c5',1,'kudu::client::KuduColumnSchema']]]
 ];

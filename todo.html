@@ -39,7 +39,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -80,34 +81,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_todo000013"></a>Module <a class="el" href="classkudu_1_1client_1_1_kudu_column_schema.html#amgrp145f08f9ead2d9b4bcd89c476cbe437f">Getters to expose column schema information.</a>  </dt>
+<dd>Expose default column value and attributes? </dd>
 <dt><a class="anchor" id="_todo000001"></a>Class <a class="el" href="classkudu_1_1client_1_1_kudu_client.html">kudu::client::KuduClient</a>  </dt>
 <dd>Cluster administration functions are likely to be in this class as well.  </dd>
-<dt><a class="anchor" id="_todo000003"></a>Global <a class="el" href="classkudu_1_1client_1_1_kudu_client.html#aa82a09718ffe68d3255195e736aec8d7">kudu::client::KuduClient::OpenTable</a>  (const std::string &amp;table_name, sp::shared_ptr&lt; KuduTable &gt; *table)</dt>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="classkudu_1_1client_1_1_kudu_client.html#aa82a09718ffe68d3255195e736aec8d7">kudu::client::KuduClient::OpenTable</a>  (const std::string &amp;table_name, sp::shared_ptr&lt; KuduTable &gt; *table)</dt>
 <dd><p class="startdd">Should we offer an async version of this as well? </p>
-<p class="enddd">Probably should have a configurable timeout in <a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html" title="A &quot;factory&quot; for the KuduClient objects. ">KuduClientBuilder</a>?  </p>
+<p class="enddd">Probably should have a configurable timeout in <a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html" title="A &quot;factory&quot; for KuduClient objects. ">KuduClientBuilder</a>?  </p>
 </dd>
-<dt><a class="anchor" id="_todo000010"></a>Global <a class="el" href="classkudu_1_1client_1_1_kudu_scanner.html#a2c621f778072a02f4092e96a0baf8180">kudu::client::KuduScanner::KuduScanner</a>  (<a class="el" href="classkudu_1_1client_1_1_kudu_table.html" title="A representation of a table on a particular cluster. ">KuduTable</a> *table)</dt>
-<dd>Should table be a const pointer?  </dd>
-<dt><a class="anchor" id="_todo000011"></a>Global <a class="el" href="classkudu_1_1client_1_1_kudu_scanner.html#af1db3f372fe3d0f30cd0b6a36b783cc8">kudu::client::KuduScanner::SetSelection</a>  (<a class="el" href="classkudu_1_1client_1_1_kudu_client.html#aef70c7f3a596ecda4040f9d46514b11a" title="Policy with which to choose amongst multiple replicas. ">KuduClient::ReplicaSelection</a> selection) WARN_UNUSED_RESULT</dt>
-<dd>Kill this method in favor of a consistency-level-based API  </dd>
-<dt><a class="anchor" id="_todo000012"></a>Global <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token.html#aab168ea164f6a89402c05029bbe0b549">kudu::client::KuduScanToken::TabletServers</a>  () const </dt>
-<dd>Is it worth keeping this method if outputs unreliable information?  </dd>
-<dt><a class="anchor" id="_todo000013"></a>Global <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a168bfed43dcd754a17d4c82293dade88">kudu::client::KuduScanTokenBuilder::SetSelection</a>  (<a class="el" href="classkudu_1_1client_1_1_kudu_client.html#aef70c7f3a596ecda4040f9d46514b11a" title="Policy with which to choose amongst multiple replicas. ">KuduClient::ReplicaSelection</a> selection) WARN_UNUSED_RESULT</dt>
-<dd>Kill this in favor of a consistency-level-based API  </dd>
-<dt><a class="anchor" id="_todo000006"></a>Global <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">kudu::client::KuduSession::Apply</a>  (KuduWriteOperation *write_op) WARN_UNUSED_RESULT</dt>
+<dt><a class="anchor" id="_todo000012"></a>Member <a class="el" href="classkudu_1_1client_1_1_kudu_column_schema.html#a8cde78ce096e34e81b565da6a38aae2f">kudu::client::KuduColumnSchema::KuduColumnSchema</a>  (const std::string &amp;name, DataType type, bool is_nullable=false, const void *default_value=NULL, <a class="el" href="classkudu_1_1client_1_1_kudu_column_storage_attributes.html" title="Representation of column storage attributes. ">KuduColumnStorageAttributes</a> attributes=KuduColumnStorageAttributes())</dt>
+<dd>KUDU-809: make this hard-to-use constructor private. Clients should use the Builder API. Currently only the Python API uses this old API. </dd>
+<dt><a class="anchor" id="_todo000010"></a>Class <a class="el" href="classkudu_1_1client_1_1_kudu_column_spec.html">kudu::client::KuduColumnSpec</a>  </dt>
+<dd>KUDU-861: this API will also be used for an improved AlterTable API.  </dd>
+<dt><a class="anchor" id="_todo000014"></a>Member <a class="el" href="classkudu_1_1client_1_1_kudu_column_spec.html#a8502dd68c6743c7c66b2b6a02d41a4e6">kudu::client::KuduColumnSpec::BlockSize</a>  (int32_t block_size)</dt>
+<dd>KUDU-1107: move above info to docs </dd>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="classkudu_1_1client_1_1_kudu_column_storage_attributes.html#a9bd5f6bce0a7369da5cd1f60341d1d71">kudu::client::KuduColumnStorageAttributes::KuduColumnStorageAttributes</a>  (EncodingType encoding=AUTO_ENCODING, CompressionType compression=DEFAULT_COMPRESSION, int32_t block_size=0)</dt>
+<dd>Make this constructor private. </dd>
+<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="classkudu_1_1client_1_1_kudu_scanner.html#af1db3f372fe3d0f30cd0b6a36b783cc8">kudu::client::KuduScanner::SetSelection</a>  (<a class="el" href="classkudu_1_1client_1_1_kudu_client.html#aef70c7f3a596ecda4040f9d46514b11a" title="Policy with which to choose amongst multiple replicas. ">KuduClient::ReplicaSelection</a> selection) WARN_UNUSED_RESULT</dt>
+<dd>Kill this method in favor of a consistency-level-based API.  </dd>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a168bfed43dcd754a17d4c82293dade88">kudu::client::KuduScanTokenBuilder::SetSelection</a>  (<a class="el" href="classkudu_1_1client_1_1_kudu_client.html#aef70c7f3a596ecda4040f9d46514b11a" title="Policy with which to choose amongst multiple replicas. ">KuduClient::ReplicaSelection</a> selection) WARN_UNUSED_RESULT</dt>
+<dd>Kill this in favor of a consistency-level-based API.  </dd>
+<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="classkudu_1_1client_1_1_kudu_schema.html#a3f51ccf1a7e6f4a4fe4958073305dbab">kudu::client::KuduSchema::Reset</a>  (const std::vector&lt; KuduColumnSchema &gt; &amp;columns, int key_columns) WARN_UNUSED_RESULT</dt>
+<dd>Remove <a class="el" href="classkudu_1_1client_1_1_kudu_schema.html#a3f51ccf1a7e6f4a4fe4958073305dbab">KuduSchema::Reset()</a>. </dd>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">kudu::client::KuduSession::Apply</a>  (<a class="el" href="classkudu_1_1client_1_1_kudu_write_operation.html" title="A single-row write operation to be sent to a Kudu table. ">KuduWriteOperation</a> *write_op) WARN_UNUSED_RESULT</dt>
 <dd>Add "doAs" ability here for proxy servers to be able to act on behalf of other users, assuming access rights.  </dd>
-<dt><a class="anchor" id="_todo000008"></a>Global <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19a520b8eef7ef0fd149b2757faf43972b1">kudu::client::KuduSession::AUTO_FLUSH_BACKGROUND</a>  </dt>
+<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19a520b8eef7ef0fd149b2757faf43972b1">kudu::client::KuduSession::AUTO_FLUSH_BACKGROUND</a>  </dt>
 <dd><p class="startdd">Provide an API for the user to specify a callback to do their own error reporting.</p>
 <p>Specify which threads the background activity runs on (probably the messenger IO threads?). </p>
 <p class="enddd">Specify which threads the background activity runs on (probably the messenger IO threads?).  </p>
 </dd>
-<dt><a class="anchor" id="_todo000007"></a>Global <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a3f224e9b95f86da7e1f2ea6fcf327756">kudu::client::KuduSession::HasPendingOperations</a>  () const </dt>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a3f224e9b95f86da7e1f2ea6fcf327756">kudu::client::KuduSession::HasPendingOperations</a>  () const </dt>
 <dd>Maybe "incomplete" or "undelivered" is clearer?  </dd>
-<dt><a class="anchor" id="_todo000005"></a>Global <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a7b09e8bd7aa18a94c6ccfd1747df3650">kudu::client::KuduSession::SetMutationBufferSpace</a>  (size_t size) WARN_UNUSED_RESULT</dt>
-<dd>specify the unit of measurement for the <code>size</code> parameter  </dd>
-<dt><a class="anchor" id="_todo000002"></a>Class <a class="el" href="classkudu_1_1client_1_1_kudu_table_alterer.html">kudu::client::KuduTableAlterer</a>  </dt>
-<dd>there are 2 memory leaks in the example above: fix it or change signature of the methods to return managed pointers instead of raw ones (unique_ptr, shared_ptr, etc.)  </dd>
-<dt><a class="anchor" id="_todo000004"></a>Global <a class="el" href="classkudu_1_1client_1_1_kudu_table_creator.html#a15126b62437fc1741b41249080376f93">kudu::client::KuduTableCreator::table_name</a>  (const std::string &amp;name)</dt>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="classkudu_1_1client_1_1_kudu_table_creator.html#a15126b62437fc1741b41249080376f93">kudu::client::KuduTableCreator::table_name</a>  (const std::string &amp;name)</dt>
 <dd>Should name of the table be a constructor's parameter instead? </dd>
 </dl>
 </div></div><!-- contents -->

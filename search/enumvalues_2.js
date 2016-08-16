@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['first_5freplica',['FIRST_REPLICA',['../classkudu_1_1client_1_1_kudu_client.html#aef70c7f3a596ecda4040f9d46514b11aaa060fb6126a3e3fa80079f885dc7d48f',1,'kudu::client::KuduClient']]]
+  ['exclusive_5fbound',['EXCLUSIVE_BOUND',['../classkudu_1_1client_1_1_kudu_table_creator.html#a0a63fdc58e8062e505f4fa71d6f2343baa117961e0003fd28663861833d23e601',1,'kudu::client::KuduTableCreator']]]
 ];

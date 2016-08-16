@@ -39,7 +39,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -61,10 +62,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -83,12 +84,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>kudu</b></li><li class="navelem"><b>client</b></li><li class="navelem"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html">KuduScanTokenBuilder</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacekudu.html">kudu</a></li><li class="navelem"><b>client</b></li><li class="navelem"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html">KuduScanTokenBuilder</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classkudu_1_1client_1_1_kudu_scan_token_builder-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">kudu::client::KuduScanTokenBuilder Class Reference</div>  </div>
 </div><!--header-->
@@ -103,33 +105,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8d300b560d419030abd503b66812484"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#aa8d300b560d419030abd503b66812484">KuduScanTokenBuilder</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_table.html">KuduTable</a> *table)</td></tr>
 <tr class="separator:aa8d300b560d419030abd503b66812484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dbb58301fc0e48ce44f41215d32f0ad"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a0dbb58301fc0e48ce44f41215d32f0ad">SetProjectedColumnNames</a> (const std::vector&lt; std::string &gt; &amp;col_names) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:a0dbb58301fc0e48ce44f41215d32f0ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a0dbb58301fc0e48ce44f41215d32f0ad">SetProjectedColumnNames</a> (const std::vector&lt; std::string &gt; &amp;col_names) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:a0dbb58301fc0e48ce44f41215d32f0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01d990e024632c7749cca96b4f857be8"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a01d990e024632c7749cca96b4f857be8">SetProjectedColumnIndexes</a> (const std::vector&lt; int &gt; &amp;col_indexes) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:a01d990e024632c7749cca96b4f857be8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a01d990e024632c7749cca96b4f857be8">SetProjectedColumnIndexes</a> (const std::vector&lt; int &gt; &amp;col_indexes) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:a01d990e024632c7749cca96b4f857be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac40487d17b8e4dcca7ca08efeb5f195e"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#ac40487d17b8e4dcca7ca08efeb5f195e">AddConjunctPredicate</a> (KuduPredicate *pred) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:ac40487d17b8e4dcca7ca08efeb5f195e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#ac40487d17b8e4dcca7ca08efeb5f195e">AddConjunctPredicate</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_predicate.html">KuduPredicate</a> *pred) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:ac40487d17b8e4dcca7ca08efeb5f195e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae11ca3d00d15138e957a2c2e89b05fcf"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#ae11ca3d00d15138e957a2c2e89b05fcf">AddLowerBound</a> (const KuduPartialRow &amp;key) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:ae11ca3d00d15138e957a2c2e89b05fcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#ae11ca3d00d15138e957a2c2e89b05fcf">AddLowerBound</a> (const <a class="el" href="classkudu_1_1_kudu_partial_row.html">KuduPartialRow</a> &amp;key) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:ae11ca3d00d15138e957a2c2e89b05fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d0fa934e4c705ac76c424a5431566a"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#ac4d0fa934e4c705ac76c424a5431566a">AddUpperBound</a> (const KuduPartialRow &amp;key) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:ac4d0fa934e4c705ac76c424a5431566a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#ac4d0fa934e4c705ac76c424a5431566a">AddUpperBound</a> (const <a class="el" href="classkudu_1_1_kudu_partial_row.html">KuduPartialRow</a> &amp;key) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:ac4d0fa934e4c705ac76c424a5431566a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ab7c9c1c4f4d3bbbc18b2b35d7d5475"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a7ab7c9c1c4f4d3bbbc18b2b35d7d5475">SetCacheBlocks</a> (bool cache_blocks) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:a7ab7c9c1c4f4d3bbbc18b2b35d7d5475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a7ab7c9c1c4f4d3bbbc18b2b35d7d5475">SetCacheBlocks</a> (bool cache_blocks) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:a7ab7c9c1c4f4d3bbbc18b2b35d7d5475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36523ca7f2f9a2b4e3c096cf6167643c"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a36523ca7f2f9a2b4e3c096cf6167643c">SetBatchSizeBytes</a> (uint32_t batch_size) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:a36523ca7f2f9a2b4e3c096cf6167643c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a36523ca7f2f9a2b4e3c096cf6167643c">SetBatchSizeBytes</a> (uint32_t batch_size) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:a36523ca7f2f9a2b4e3c096cf6167643c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a168bfed43dcd754a17d4c82293dade88"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a168bfed43dcd754a17d4c82293dade88">SetSelection</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_client.html#aef70c7f3a596ecda4040f9d46514b11a">KuduClient::ReplicaSelection</a> selection) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:a168bfed43dcd754a17d4c82293dade88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a168bfed43dcd754a17d4c82293dade88">SetSelection</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_client.html#aef70c7f3a596ecda4040f9d46514b11a">KuduClient::ReplicaSelection</a> selection) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:a168bfed43dcd754a17d4c82293dade88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb34f01a9bc52a9e23ce49124bab3892"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#adb34f01a9bc52a9e23ce49124bab3892">SetReadMode</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_scanner.html#a36fdb59d6488618363331269d3f58348">KuduScanner::ReadMode</a> read_mode) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:adb34f01a9bc52a9e23ce49124bab3892"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#adb34f01a9bc52a9e23ce49124bab3892">SetReadMode</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_scanner.html#a36fdb59d6488618363331269d3f58348">KuduScanner::ReadMode</a> read_mode) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:adb34f01a9bc52a9e23ce49124bab3892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a17f27950ccd59bcb3430fb28b61dbe"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a4a17f27950ccd59bcb3430fb28b61dbe">SetFaultTolerant</a> () WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:a4a17f27950ccd59bcb3430fb28b61dbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a4a17f27950ccd59bcb3430fb28b61dbe">SetFaultTolerant</a> () WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:a4a17f27950ccd59bcb3430fb28b61dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4c1cfa570edfaab818831a2330eece5"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#aa4c1cfa570edfaab818831a2330eece5">SetSnapshotMicros</a> (uint64_t snapshot_timestamp_micros) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:aa4c1cfa570edfaab818831a2330eece5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#aa4c1cfa570edfaab818831a2330eece5">SetSnapshotMicros</a> (uint64_t snapshot_timestamp_micros) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:aa4c1cfa570edfaab818831a2330eece5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a313e345dc6c1f9ccdad65df5af2cf4b7"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a313e345dc6c1f9ccdad65df5af2cf4b7">SetSnapshotRaw</a> (uint64_t snapshot_timestamp) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:a313e345dc6c1f9ccdad65df5af2cf4b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a313e345dc6c1f9ccdad65df5af2cf4b7">SetSnapshotRaw</a> (uint64_t snapshot_timestamp) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:a313e345dc6c1f9ccdad65df5af2cf4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f0e58d5d6fb3867ff0a03f7fc633445"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a0f0e58d5d6fb3867ff0a03f7fc633445">SetTimeoutMillis</a> (int millis) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:a0f0e58d5d6fb3867ff0a03f7fc633445"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a0f0e58d5d6fb3867ff0a03f7fc633445">SetTimeoutMillis</a> (int millis) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:a0f0e58d5d6fb3867ff0a03f7fc633445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbc00b42db998f3342fa0ca7ab55dfdb"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#acbc00b42db998f3342fa0ca7ab55dfdb">Build</a> (std::vector&lt; <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token.html">KuduScanToken</a> * &gt; *tokens) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:acbc00b42db998f3342fa0ca7ab55dfdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#acbc00b42db998f3342fa0ca7ab55dfdb">Build</a> (std::vector&lt; <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token.html">KuduScanToken</a> * &gt; *tokens) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:acbc00b42db998f3342fa0ca7ab55dfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add259a317096276d1ae3d42779f253f9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#add259a317096276d1ae3d42779f253f9">ToString</a> () const </td></tr>
 <tr class="separator:add259a317096276d1ae3d42779f253f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +164,7 @@ Public Member Functions</h2></td></tr>
 <p>Construct an instance of the class.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">table</td><td>The table to work with. The given object must remain valid for the lifetime of the builder, and the tokens which it builds. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">table</td><td>The table the tokens should scan. The given object must remain valid for the lifetime of the builder, and the tokens which it builds. </td></tr>
   </table>
   </dd>
 </dl>
@@ -175,22 +177,24 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::AddConjunctPredicate </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::AddConjunctPredicate </td>
           <td>(</td>
-          <td class="paramtype">KuduPredicate *&#160;</td>
+          <td class="paramtype"><a class="el" href="classkudu_1_1client_1_1_kudu_predicate.html">KuduPredicate</a> *&#160;</td>
           <td class="paramname"><em>pred</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p></p>
 <p>Add a predicate for the scan.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pred</td><td>Predicate to set. The <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html" title="Builds scan tokens for a table. ">KuduScanTokenBuilder</a> instance takes ownership of the parameter even if a bad Status is returned. Multiple calls of this method make the specified set of predicates to work in conjunction &ndash; i.e. all predicates must pass for a row to be returned. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pred</td><td>Predicate to set. The <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html" title="Builds scan tokens for a table. ">KuduScanTokenBuilder</a> instance takes ownership of the parameter even if a bad <a class="el" href="classkudu_1_1_status.html" title="A representation of an operation&#39;s outcome. ">Status</a> is returned. Multiple calls of this method make the specified set of predicates work in conjunction, i.e. all predicates must be true for a row to be returned. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -199,14 +203,16 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::AddLowerBound </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::AddLowerBound </td>
           <td>(</td>
-          <td class="paramtype">const KuduPartialRow &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classkudu_1_1_kudu_partial_row.html">KuduPartialRow</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p></p>
 <p>Add a lower bound (inclusive) primary key for the scan.</p>
 <p>If any bound is already added, this bound is intersected with that one.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -215,7 +221,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -224,9 +230,9 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::AddUpperBound </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::AddUpperBound </td>
           <td>(</td>
-          <td class="paramtype">const KuduPartialRow &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classkudu_1_1_kudu_partial_row.html">KuduPartialRow</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -240,7 +246,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -249,7 +255,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::Build </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::Build </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token.html">KuduScanToken</a> * &gt; *&#160;</td>
           <td class="paramname"><em>tokens</em></td><td>)</td>
@@ -265,7 +271,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -274,7 +280,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::SetBatchSizeBytes </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::SetBatchSizeBytes </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>batch_size</em></td><td>)</td>
@@ -289,7 +295,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -298,7 +304,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::SetCacheBlocks </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::SetCacheBlocks </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>cache_blocks</em></td><td>)</td>
@@ -306,6 +312,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p></p>
 <p>Set the block caching policy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -313,7 +321,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -322,17 +330,19 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::SetFaultTolerant </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::SetFaultTolerant </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Make scans resumable at another tablet server if current one fails.</p>
+
+<p></p>
+<p>Make scans resumable at another tablet server if current server fails.</p>
 <p>Scans are by default non fault-tolerant, and scans will fail if scanning an individual tablet fails (for example, if a tablet server crashes in the middle of a tablet scan). If this method is called, scans will be resumed at another tablet server in the case of failure.</p>
 <p>Fault-tolerant scans typically have lower throughput than non fault-tolerant scans. Fault tolerant scans use <code>READ_AT_SNAPSHOT</code> mode: if no snapshot timestamp is provided, the server will pick one.</p>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -341,7 +351,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::SetProjectedColumnIndexes </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::SetProjectedColumnIndexes </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
           <td class="paramname"><em>col_indexes</em></td><td>)</td>
@@ -349,15 +359,17 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p></p>
 <p>Set the column projection by passing the column indexes to read.</p>
-<p>Set the column projection used for this scanner by passing the column indices to read. A call this method overrides any previous call to <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a0dbb58301fc0e48ce44f41215d32f0ad">SetProjectedColumnNames()</a> or <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a01d990e024632c7749cca96b4f857be8">SetProjectedColumnIndexes()</a>.</p>
+<p>Set the column projection used for this scanner by passing the column indices to read. A call to this method overrides any previous call to <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a0dbb58301fc0e48ce44f41215d32f0ad">SetProjectedColumnNames()</a> or <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a01d990e024632c7749cca96b4f857be8">SetProjectedColumnIndexes()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">col_indexes</td><td>Column indices for the projection </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">col_indexes</td><td>Column indices for the projection. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -366,7 +378,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::SetProjectedColumnNames </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::SetProjectedColumnNames </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>col_names</em></td><td>)</td>
@@ -378,11 +390,11 @@ Public Member Functions</h2></td></tr>
 <p>Set the column projection used for this scanner by passing the column names to read. A call of this method overrides any previous call to <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a0dbb58301fc0e48ce44f41215d32f0ad">SetProjectedColumnNames()</a> or <a class="el" href="classkudu_1_1client_1_1_kudu_scan_token_builder.html#a01d990e024632c7749cca96b4f857be8">SetProjectedColumnIndexes()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">col_names</td><td>Column names for the projection </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">col_names</td><td>Column names for the projection. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -391,7 +403,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::SetReadMode </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::SetReadMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classkudu_1_1client_1_1_kudu_scanner.html#a36fdb59d6488618363331269d3f58348">KuduScanner::ReadMode</a>&#160;</td>
           <td class="paramname"><em>read_mode</em></td><td>)</td>
@@ -399,14 +411,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p></p>
 <p>Set the ReadMode. Default is <code>READ_LATEST</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">read_mode</td><td>Read mode to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">read_mode</td><td>Read mode to set. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -415,7 +429,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::SetSelection </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::SetSelection </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classkudu_1_1client_1_1_kudu_client.html#aef70c7f3a596ecda4040f9d46514b11a">KuduClient::ReplicaSelection</a>&#160;</td>
           <td class="paramname"><em>selection</em></td><td>)</td>
@@ -426,12 +440,12 @@ Public Member Functions</h2></td></tr>
 <p>Set the replica selection policy while scanning.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">selection</td><td>Selection policy to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">selection</td><td>Selection policy to set. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo:</a></b></dt><dd>Kill this in favor of a consistency-level-based API </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>Kill this in favor of a consistency-level-based API. </dd></dl>
 
 </div>
 </div>
@@ -440,7 +454,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::SetSnapshotMicros </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::SetSnapshotMicros </td>
           <td>(</td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>snapshot_timestamp_micros</em></td><td>)</td>
@@ -448,6 +462,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p></p>
 <p>Set snapshot timestamp for scans in <code>READ_AT_SNAPSHOT</code> mode.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -455,7 +471,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -464,7 +480,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::SetSnapshotRaw </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::SetSnapshotRaw </td>
           <td>(</td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>snapshot_timestamp</em></td><td>)</td>
@@ -472,6 +488,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p></p>
 <p>Set snapshot timestamp for scans in <code>READ_AT_SNAPSHOT</code> mode (raw).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -479,7 +497,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -488,7 +506,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduScanTokenBuilder::SetTimeoutMillis </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduScanTokenBuilder::SetTimeoutMillis </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>millis</em></td><td>)</td>
@@ -496,6 +514,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p></p>
 <p>Set the maximum time that Open() and NextBatch() are allowed to take.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -503,7 +523,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -524,7 +544,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/aserbin/Projects/kudu/src/kudu/client/<a class="el" href="client_8h_source.html">client.h</a></li>
+<li>include/kudu/client/<a class="el" href="client_8h_source.html">client.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

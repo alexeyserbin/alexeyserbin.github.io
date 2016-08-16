@@ -39,7 +39,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -61,10 +62,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -83,18 +84,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>kudu</b></li><li class="navelem"><b>client</b></li><li class="navelem"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html">KuduClientBuilder</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacekudu.html">kudu</a></li><li class="navelem"><b>client</b></li><li class="navelem"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html">KuduClientBuilder</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classkudu_1_1client_1_1_kudu_client_builder-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">kudu::client::KuduClientBuilder Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A "factory" for the <a class="el" href="classkudu_1_1client_1_1_kudu_client.html" title="A handle for a connection to a cluster. ">KuduClient</a> objects.  
+<p>A "factory" for <a class="el" href="classkudu_1_1client_1_1_kudu_client.html" title="A handle for a connection to a cluster. ">KuduClient</a> objects.  
  <a href="classkudu_1_1client_1_1_kudu_client_builder.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="client_8h_source.html">client.h</a>&gt;</code></p>
@@ -107,16 +109,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0c1b92afad7a6e21c5ea781fb7d42114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add149f1c1c2d3653e6a6cae4f44fa90c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html">KuduClientBuilder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html#add149f1c1c2d3653e6a6cae4f44fa90c">add_master_server_addr</a> (const std::string &amp;addr)</td></tr>
 <tr class="separator:add149f1c1c2d3653e6a6cae4f44fa90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6114bb56e4d9d1231df0ef73c9aec752"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html">KuduClientBuilder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html#a6114bb56e4d9d1231df0ef73c9aec752">default_admin_operation_timeout</a> (const MonoDelta &amp;timeout)</td></tr>
+<tr class="memitem:a6114bb56e4d9d1231df0ef73c9aec752"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html">KuduClientBuilder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html#a6114bb56e4d9d1231df0ef73c9aec752">default_admin_operation_timeout</a> (const <a class="el" href="classkudu_1_1_mono_delta.html">MonoDelta</a> &amp;timeout)</td></tr>
 <tr class="separator:a6114bb56e4d9d1231df0ef73c9aec752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1813e8c8d24e92a0a710724000e2b3df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html">KuduClientBuilder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html#a1813e8c8d24e92a0a710724000e2b3df">default_rpc_timeout</a> (const MonoDelta &amp;timeout)</td></tr>
+<tr class="memitem:a1813e8c8d24e92a0a710724000e2b3df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html">KuduClientBuilder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html#a1813e8c8d24e92a0a710724000e2b3df">default_rpc_timeout</a> (const <a class="el" href="classkudu_1_1_mono_delta.html">MonoDelta</a> &amp;timeout)</td></tr>
 <tr class="separator:a1813e8c8d24e92a0a710724000e2b3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1585dd6eff82519fe81088d1cfd35b77"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html#a1585dd6eff82519fe81088d1cfd35b77">Build</a> (sp::shared_ptr&lt; <a class="el" href="classkudu_1_1client_1_1_kudu_client.html">KuduClient</a> &gt; *client)</td></tr>
+<tr class="memitem:a1585dd6eff82519fe81088d1cfd35b77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html#a1585dd6eff82519fe81088d1cfd35b77">Build</a> (sp::shared_ptr&lt; <a class="el" href="classkudu_1_1client_1_1_kudu_client.html">KuduClient</a> &gt; *client)</td></tr>
 <tr class="separator:a1585dd6eff82519fe81088d1cfd35b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A "factory" for the <a class="el" href="classkudu_1_1client_1_1_kudu_client.html" title="A handle for a connection to a cluster. ">KuduClient</a> objects. </p>
-<p>This class is used to create instances of <a class="el" href="classkudu_1_1client_1_1_kudu_client.html" title="A handle for a connection to a cluster. ">KuduClient</a> class with pre-set options/parameters. </p>
+<div class="textblock"><p>A "factory" for <a class="el" href="classkudu_1_1client_1_1_kudu_client.html" title="A handle for a connection to a cluster. ">KuduClient</a> objects. </p>
+<p>This class is used to create instances of the <a class="el" href="classkudu_1_1client_1_1_kudu_client.html" title="A handle for a connection to a cluster. ">KuduClient</a> class with pre-set options/parameters. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="add149f1c1c2d3653e6a6cae4f44fa90c"></a>
 <div class="memitem">
@@ -131,15 +133,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add an RPC address of a master</p>
+<p>Add an RPC address of a master to work with.</p>
 <p>At least one master is required.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>RPC address of master server to add </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>RPC address of master server to add. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the updated instance </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the updated object. </dd></dl>
 
 </div>
 </div>
@@ -148,7 +150,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduClientBuilder::Build </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduClientBuilder::Build </td>
           <td>(</td>
           <td class="paramtype">sp::shared_ptr&lt; <a class="el" href="classkudu_1_1client_1_1_kudu_client.html">KuduClient</a> &gt; *&#160;</td>
           <td class="paramname"><em>client</em></td><td>)</td>
@@ -156,14 +158,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create client object. Note that KuduClients are shared amongst multiple threads and, as such, are stored in shared pointers.</p>
+<p>Create a client object.</p>
+<dl class="section note"><dt>Note</dt><dd>KuduClients objects are shared amongst multiple threads and, as such, are stored in shared pointers.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">client</td><td>The newly created instance wrapped into a shared pointer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">client</td><td>The newly created object wrapped in a shared pointer. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation status. The return value may indicate an error in the create operation, or a misuse of the builder; in the latter case, only the last error is </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation status. The return value may indicate an error in the create operation, or a misuse of the builder; in the latter case, only the last error is returned. </dd></dl>
 
 </div>
 </div>
@@ -180,7 +183,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Clear the set of master addresses.</p>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the updated instance </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the updated object. </dd></dl>
 
 </div>
 </div>
@@ -191,21 +194,21 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html">KuduClientBuilder</a>&amp; kudu::client::KuduClientBuilder::default_admin_operation_timeout </td>
           <td>(</td>
-          <td class="paramtype">const MonoDelta &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classkudu_1_1_mono_delta.html">MonoDelta</a> &amp;&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set default timeout for administrative operations</p>
-<p>Using this method it's possible to modify the default timeout for operations like CreateTable, AlterTable, etc. By default it is 30 seconds.</p>
+<p>Set the default timeout for administrative operations.</p>
+<p>Using this method it is possible to modify the default timeout for operations like CreateTable, AlterTable, etc. By default it is 30 seconds.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Timeout value to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Timeout value to set. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the updated instance </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the updated object. </dd></dl>
 
 </div>
 </div>
@@ -216,7 +219,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classkudu_1_1client_1_1_kudu_client_builder.html">KuduClientBuilder</a>&amp; kudu::client::KuduClientBuilder::default_rpc_timeout </td>
           <td>(</td>
-          <td class="paramtype">const MonoDelta &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classkudu_1_1_mono_delta.html">MonoDelta</a> &amp;&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
           <td></td>
         </tr>
@@ -226,11 +229,11 @@ Public Member Functions</h2></td></tr>
 <p>If not provided, defaults to 10 seconds.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Timeout value to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>Timeout value to set. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the updated instance </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the updated object. </dd></dl>
 
 </div>
 </div>
@@ -250,16 +253,16 @@ Public Member Functions</h2></td></tr>
 <p>Add RPC addresses of multiple masters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addrs</td><td>RPC addresses of masterts to add </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addrs</td><td>RPC addresses of masters to add. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the updated instance </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the updated object. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/aserbin/Projects/kudu/src/kudu/client/<a class="el" href="client_8h_source.html">client.h</a></li>
+<li>include/kudu/client/<a class="el" href="client_8h_source.html">client.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['release_5ffailed_5fop',['release_failed_op',['../classkudu_1_1client_1_1_kudu_error.html#ae1a49bd16eeff4d2ab88fa70e1dc3c6a',1,'kudu::client::KuduError']]],
-  ['renameto',['RenameTo',['../classkudu_1_1client_1_1_kudu_table_alterer.html#aca8ea8d7b65e6952c76fd97f12d5b324',1,'kudu::client::KuduTableAlterer']]]
+  ['partition_5fschema',['partition_schema',['../classkudu_1_1client_1_1_kudu_table.html#af1125879ce34fa6c994a70fe1803a808',1,'kudu::client::KuduTable']]],
+  ['posix_5fcode',['posix_code',['../classkudu_1_1_status.html#a20d5b34e3507a5dd326029a87df641dc',1,'kudu::Status']]],
+  ['projection_5fschema',['projection_schema',['../classkudu_1_1client_1_1_kudu_scan_batch.html#a3b58e77f53beea357fbb8bcddaab3137',1,'kudu::client::KuduScanBatch']]]
 ];

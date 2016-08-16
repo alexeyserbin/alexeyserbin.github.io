@@ -39,7 +39,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -61,10 +62,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
       <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -83,14 +84,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>kudu</b></li><li class="navelem"><b>client</b></li><li class="navelem"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html">KuduSession</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacekudu.html">kudu</a></li><li class="navelem"><b>client</b></li><li class="navelem"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html">KuduSession</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="classkudu_1_1client_1_1_kudu_session-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">kudu::client::KuduSession Class Reference</div>  </div>
 </div><!--header-->
@@ -114,7 +116,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:aaec3956e642610d703f3b83b78e24e19"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19">FlushMode</a> { <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19ad74b76e407e62ca951d369521636df2b">AUTO_FLUSH_SYNC</a>, 
 <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19a520b8eef7ef0fd149b2757faf43972b1">AUTO_FLUSH_BACKGROUND</a>, 
 <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19a1db3efc2094da09aae45bb68475cdb4a">MANUAL_FLUSH</a>
- }<tr class="memdesc:aaec3956e642610d703f3b83b78e24e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modes of operation flush.  <a href="classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19">More...</a><br /></td></tr>
+ }<tr class="memdesc:aaec3956e642610d703f3b83b78e24e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modes of flush operations.  <a href="classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19">More...</a><br /></td></tr>
 <tr class="separator:aaec3956e642610d703f3b83b78e24e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:aabd55109ba3b086bbe33b277cdd40d22"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aabd55109ba3b086bbe33b277cdd40d22">ExternalConsistencyMode</a> { <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aabd55109ba3b086bbe33b277cdd40d22ae978fab7451faebf4399830b603c855c">CLIENT_PROPAGATED</a>, 
@@ -125,23 +127,23 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a83555781b5a037f87c215e565ecf1a8f"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a83555781b5a037f87c215e565ecf1a8f">SetFlushMode</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19">FlushMode</a> m) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:a83555781b5a037f87c215e565ecf1a8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a83555781b5a037f87c215e565ecf1a8f">SetFlushMode</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19">FlushMode</a> m) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:a83555781b5a037f87c215e565ecf1a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56d1c7f47dfcaf5121b15a4435a8eeca"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a56d1c7f47dfcaf5121b15a4435a8eeca">SetExternalConsistencyMode</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aabd55109ba3b086bbe33b277cdd40d22">ExternalConsistencyMode</a> m) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:a56d1c7f47dfcaf5121b15a4435a8eeca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a56d1c7f47dfcaf5121b15a4435a8eeca">SetExternalConsistencyMode</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aabd55109ba3b086bbe33b277cdd40d22">ExternalConsistencyMode</a> m) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:a56d1c7f47dfcaf5121b15a4435a8eeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b09e8bd7aa18a94c6ccfd1747df3650"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a7b09e8bd7aa18a94c6ccfd1747df3650">SetMutationBufferSpace</a> (size_t size) WARN_UNUSED_RESULT</td></tr>
-<tr class="separator:a7b09e8bd7aa18a94c6ccfd1747df3650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa9bbc51c27104ce103b9ecda3b8abf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aefa9bbc51c27104ce103b9ecda3b8abf">SetMutationBufferSpace</a> (size_t size_bytes) WARN_UNUSED_RESULT</td></tr>
+<tr class="separator:aefa9bbc51c27104ce103b9ecda3b8abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25b22362650d7120f59cc1025e40bd79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a25b22362650d7120f59cc1025e40bd79">SetTimeoutMillis</a> (int millis)</td></tr>
 <tr class="separator:a25b22362650d7120f59cc1025e40bd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3f7324b27fca298c5ca3d07b4741943"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply</a> (KuduWriteOperation *write_op) WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:ad3f7324b27fca298c5ca3d07b4741943"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_write_operation.html">KuduWriteOperation</a> *write_op) WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:ad3f7324b27fca298c5ca3d07b4741943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a507e940962fdf08ee232534f73792b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a507e940962fdf08ee232534f73792b79">ApplyAsync</a> (KuduWriteOperation *write_op, KuduStatusCallback *cb)</td></tr>
+<tr class="memitem:a507e940962fdf08ee232534f73792b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a507e940962fdf08ee232534f73792b79">ApplyAsync</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_write_operation.html">KuduWriteOperation</a> *write_op, <a class="el" href="classkudu_1_1client_1_1_kudu_status_callback.html">KuduStatusCallback</a> *cb)</td></tr>
 <tr class="separator:a507e940962fdf08ee232534f73792b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64955abb5f5cc821b6e56354f733ce84"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a64955abb5f5cc821b6e56354f733ce84">Flush</a> () WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:a64955abb5f5cc821b6e56354f733ce84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a64955abb5f5cc821b6e56354f733ce84">Flush</a> () WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:a64955abb5f5cc821b6e56354f733ce84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8c68570479e95b325d8a5437eef8731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad8c68570479e95b325d8a5437eef8731">FlushAsync</a> (KuduStatusCallback *cb)</td></tr>
+<tr class="memitem:ad8c68570479e95b325d8a5437eef8731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad8c68570479e95b325d8a5437eef8731">FlushAsync</a> (<a class="el" href="classkudu_1_1client_1_1_kudu_status_callback.html">KuduStatusCallback</a> *cb)</td></tr>
 <tr class="separator:ad8c68570479e95b325d8a5437eef8731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5204844e361ecc3068fbc4e02fd4436"><td class="memItemLeft" align="right" valign="top">Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aa5204844e361ecc3068fbc4e02fd4436">Close</a> () WARN_UNUSED_RESULT</td></tr>
+<tr class="memitem:aa5204844e361ecc3068fbc4e02fd4436"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classkudu_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aa5204844e361ecc3068fbc4e02fd4436">Close</a> () WARN_UNUSED_RESULT</td></tr>
 <tr class="separator:aa5204844e361ecc3068fbc4e02fd4436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f224e9b95f86da7e1f2ea6fcf327756"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a3f224e9b95f86da7e1f2ea6fcf327756">HasPendingOperations</a> () const </td></tr>
 <tr class="separator:a3f224e9b95f86da7e1f2ea6fcf327756"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,22 +194,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>internal::Batcher</b
 <p>The possible external consistency modes on which Kudu operates. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aabd55109ba3b086bbe33b277cdd40d22ae978fab7451faebf4399830b603c855c"></a>CLIENT_PROPAGATED&#160;</td><td class="fielddoc">
-<p>This is the default mode. </p><pre class="fragment">The response to any write will contain a timestamp.  Any further calls
-from the same client to other servers will update those servers
-with that timestamp.  Following write operations from the same client
-will be assigned timestamps that are strictly higher, enforcing external
-consistency without having to wait or incur any latency penalties.
-
-In order to maintain external consistency for writes between
-two different clients in this mode, the user must forward the timestamp
-from the first client to the second by using
-KuduClient::GetLatestObservedTimestamp() and
-KuduClient::SetLatestObservedTimestamp().
-
-@warning
-  Failure to propagate timestamp information through back-channels
-  between two different clients will negate any external consistency
-  guarantee under this mode.  </pre> </td></tr>
+<p>The response to any write will contain a timestamp. Any further calls from the same client to other servers will update those servers with that timestamp. Following write operations from the same client will be assigned timestamps that are strictly higher, enforcing external consistency without having to wait or incur any latency penalties.</p>
+<p>In order to maintain external consistency for writes between two different clients in this mode, the user must forward the timestamp from the first client to the second by using <a class="el" href="classkudu_1_1client_1_1_kudu_client.html#a3a671b3540c74ef7c358bb98e95031e0">KuduClient::GetLatestObservedTimestamp()</a> and <a class="el" href="classkudu_1_1client_1_1_kudu_client.html#a0809b055eda76fd68988462f2a9791dd">KuduClient::SetLatestObservedTimestamp()</a>.</p>
+<p>This is the default external consistency mode.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Failure to propagate timestamp information through back-channels between two different clients will negate any external consistency guarantee under this mode. </dd></dl>
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aabd55109ba3b086bbe33b277cdd40d22a70010f3ef1f70b99b02328c024c436c9"></a>COMMIT_WAIT&#160;</td><td class="fielddoc">
 <p>The server will guarantee that write operations from the same or from other client are externally consistent, without the need to propagate timestamps across clients. This is done by making write operations wait until there is certainty that all follow up write operations (operations that start after the previous one finishes) will be assigned a timestamp that is strictly higher, enforcing external consistency.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Depending on the clock synchronization state of TabletServers this may imply considerable latency. Moreover operations in <code>COMMIT_WAIT</code> external consistency mode will outright fail if TabletServer clocks are either unsynchronized or synchronized but with a maximum error which surpasses a pre-configured threshold. </dd></dl>
@@ -226,18 +217,18 @@ KuduClient::SetLatestObservedTimestamp().
       </table>
 </div><div class="memdoc">
 
-<p>Modes of operation flush. </p>
+<p>Modes of flush operations. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aaec3956e642610d703f3b83b78e24e19ad74b76e407e62ca951d369521636df2b"></a>AUTO_FLUSH_SYNC&#160;</td><td class="fielddoc">
-<p>Every write will be sent to the server in-band with the <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a> call. No batching will occur. This is the default flush mode. In this mode, the <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a64955abb5f5cc821b6e56354f733ce84">Flush()</a> call never has any effect, since each <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a> call has already flushed the buffer. This is the default for a session. </p>
+<p>Every write will be sent to the server in-band with the <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a> call. No batching will occur. In this mode, the <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a64955abb5f5cc821b6e56354f733ce84">Flush()</a> call never has any effect, since each <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a> call has already flushed the buffer. This is the default flush mode. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aaec3956e642610d703f3b83b78e24e19a520b8eef7ef0fd149b2757faf43972b1"></a>AUTO_FLUSH_BACKGROUND&#160;</td><td class="fielddoc">
 <p><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a> calls will return immediately, but the writes will be sent in the background, potentially batched together with other writes from the same session. If there is not sufficient buffer space, then <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a> will block for buffer space to be available.</p>
 <p>Because writes are applied in the background, any errors will be stored in a session-local buffer. Call <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a277c213a68679c6b0d5c432919eb9198">CountPendingErrors()</a> or <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad5e3521623338de49cfd62914bdcb2f7">GetPendingErrors()</a> to retrieve them.</p>
 <p>The <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a64955abb5f5cc821b6e56354f733ce84">Flush()</a> call can be used to block until the buffer is empty.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This is not implemented yet, see KUDU-456</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Provide an API for the user to specify a callback to do their own error reporting.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>Specify which threads the background activity runs on (probably the messenger IO threads?). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Provide an API for the user to specify a callback to do their own error reporting.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Specify which threads the background activity runs on (probably the messenger IO threads?). </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="aaec3956e642610d703f3b83b78e24e19a1db3efc2094da09aae45bb68475cdb4a"></a>MANUAL_FLUSH&#160;</td><td class="fielddoc">
 <p><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a> calls will return immediately, and the writes will not be sent until the user calls <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a64955abb5f5cc821b6e56354f733ce84">Flush()</a>. If the buffer runs past the configured space limit, then <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a> will return an error. </p>
@@ -252,15 +243,15 @@ KuduClient::SetLatestObservedTimestamp().
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduSession::Apply </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduSession::Apply </td>
           <td>(</td>
-          <td class="paramtype">KuduWriteOperation *&#160;</td>
+          <td class="paramtype"><a class="el" href="classkudu_1_1client_1_1_kudu_write_operation.html">KuduWriteOperation</a> *&#160;</td>
           <td class="paramname"><em>write_op</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Add "doAs" ability here for proxy servers to be able to act on behalf of other users, assuming access rights. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Add "doAs" ability here for proxy servers to be able to act on behalf of other users, assuming access rights. </dd></dl>
 <p>Apply the write operation.</p>
 <p>The behavior of this function depends on the current flush mode. Regardless of flush mode, however, <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a> may begin to perform processing in the background for the call (e.g. looking up the tablet, etc). Given that, an error may be queued into the PendingErrors structure prior to flushing, even in <code>MANUAL_FLUSH</code> mode.</p>
 <p>In case of any error, which may occur during flushing or because the write_op is malformed, the write_op is stored in the session's error collector which may be retrieved at any time.</p>
@@ -271,7 +262,7 @@ KuduClient::SetLatestObservedTimestamp().
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -282,13 +273,13 @@ KuduClient::SetLatestObservedTimestamp().
         <tr>
           <td class="memname">void kudu::client::KuduSession::ApplyAsync </td>
           <td>(</td>
-          <td class="paramtype">KuduWriteOperation *&#160;</td>
+          <td class="paramtype"><a class="el" href="classkudu_1_1client_1_1_kudu_write_operation.html">KuduWriteOperation</a> *&#160;</td>
           <td class="paramname"><em>write_op</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">KuduStatusCallback *&#160;</td>
+          <td class="paramtype"><a class="el" href="classkudu_1_1client_1_1_kudu_status_callback.html">KuduStatusCallback</a> *&#160;</td>
           <td class="paramname"><em>cb</em>&#160;</td>
         </tr>
         <tr>
@@ -298,16 +289,16 @@ KuduClient::SetLatestObservedTimestamp().
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Apply the write operation in asynchronous mode.</p>
-<p>This method is similar to <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a>, except it never blocks. Even in the flush modes that return immediately, 'cb' is triggered with the result. The callback may be called by a reactor thread, or in some cases may be called inline by the same thread which calls <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a507e940962fdf08ee232534f73792b79">ApplyAsync()</a>.</p>
+<p>Apply the write operation asynchronously.</p>
+<p>This method is similar to <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a>, except it never blocks. Even in the flush modes that return immediately, <code>cb</code> is triggered with the result. The callback may be called by a reactor thread, or in some cases may be called inline by the same thread which calls <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a507e940962fdf08ee232534f73792b79">ApplyAsync()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">write_op</td><td>Operation to apply. This method transfers the write_op's ownership to the <a class="el" href="classkudu_1_1client_1_1_kudu_session.html" title="Representation of a Kudu client session. ">KuduSession</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Callback to report the status of the operation. The <code>cb</code> object must remain valid until it's called.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Callback to report the status of the operation. The <code>cb</code> object must remain valid until it is called.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section warning"><dt>Warning</dt><dd>Not yet implemented </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not yet implemented. </dd></dl>
 
 </div>
 </div>
@@ -323,8 +314,7 @@ KuduClient::SetLatestObservedTimestamp().
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get client for the session.</p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the client object. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Client for the session: pointer to the associated client object. </dd></dl>
 
 </div>
 </div>
@@ -333,15 +323,14 @@ KuduClient::SetLatestObservedTimestamp().
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduSession::Close </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduSession::Close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Close the session.</p>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status. Particularly, an error is returned if there are unflushed or in-flight operations. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classkudu_1_1_status.html" title="A representation of an operation&#39;s outcome. ">Status</a> of the session closure. In particular, an error is returned if there are unflushed or in-flight operations. </dd></dl>
 
 </div>
 </div>
@@ -377,7 +366,7 @@ KuduClient::SetLatestObservedTimestamp().
       </table>
 </div><div class="memdoc">
 <p>Get error count for pending operations.</p>
-<p>Errors may accumulate when using the <code>AUTO_FLUSH_BACKGROUND</code> mode.</p>
+<p>Errors may accumulate in session's lifetime; use this method to see how many errors happened since last call of <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad5e3521623338de49cfd62914bdcb2f7">GetPendingErrors()</a> method.</p>
 <dl class="section note"><dt>Note</dt><dd>This function is thread-safe.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Total count of errors accumulated during the session. </dd></dl>
 
@@ -388,7 +377,7 @@ KuduClient::SetLatestObservedTimestamp().
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduSession::Flush </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduSession::Flush </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -396,20 +385,9 @@ KuduClient::SetLatestObservedTimestamp().
       </table>
 </div><div class="memdoc">
 <p>Flush any pending writes.</p>
-<p>Returns a bad status if there are any pending errors after the rows have been flushed. Callers should then use GetPendingErrors to determine which specific operations failed.</p>
 <p>In <code>AUTO_FLUSH_SYNC</code> mode, this has no effect, since every <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a> call flushes itself inline.</p>
-<p>In the case that the async version of this method is used, then the callback will be called upon completion of the operations which were buffered since the last flush. In other words, in the following sequence: </p><div class="fragment"><div class="line">session-&gt;Insert(a);</div>
-<div class="line">session-&gt;FlushAsync(callback_1);</div>
-<div class="line">session-&gt;Insert(b);</div>
-<div class="line">session-&gt;FlushAsync(callback_2);</div>
-</div><!-- fragment --><p> ... <code>callback_2</code> will be triggered once <code>b</code> has been inserted, regardless of whether <code>a</code> has completed or not.</p>
-<dl class="section note"><dt>Note</dt><dd>This also means that, if FlushAsync is called twice in succession, with no intervening operations, the second flush will return immediately. For example: <div class="fragment"><div class="line">session-&gt;Insert(a);</div>
-<div class="line">session-&gt;FlushAsync(callback_1); <span class="comment">// called when &#39;a&#39; is inserted</span></div>
-<div class="line">session-&gt;FlushAsync(callback_2); <span class="comment">// called immediately!</span></div>
-</div><!-- fragment --> Note that, as in all other async functions in Kudu, the callback may be called either from an IO thread or the same thread which calls FlushAsync. The callback should not block.</dd>
-<dd>
-This function is thread-safe.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is thread-safe.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. In particular, returns a non-OK status if there are any pending errors after the rows have been flushed. Callers should then use GetPendingErrors to determine which specific operations failed. </dd></dl>
 
 </div>
 </div>
@@ -420,17 +398,20 @@ This function is thread-safe.</dd></dl>
         <tr>
           <td class="memname">void kudu::client::KuduSession::FlushAsync </td>
           <td>(</td>
-          <td class="paramtype">KuduStatusCallback *&#160;</td>
+          <td class="paramtype"><a class="el" href="classkudu_1_1client_1_1_kudu_status_callback.html">KuduStatusCallback</a> *&#160;</td>
           <td class="paramname"><em>cb</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p></p>
-<p>Flush any pending writes: the async version. Flush any pending writes.</p>
-<p>Returns a bad status if there are any pending errors after the rows have been flushed. Callers should then use GetPendingErrors to determine which specific operations failed.</p>
-<p>In <code>AUTO_FLUSH_SYNC</code> mode, this has no effect, since every <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad3f7324b27fca298c5ca3d07b4741943">Apply()</a> call flushes itself inline.</p>
+<p>Flush any pending writes asynchronously.</p>
+<p>This method schedules a background flush of pending operations. Provided callback is invoked upon completion of the flush. If there were errors while flushing the operations, corresponding 'not OK' status is passed as a parameter for the callback invocation. Callers should then use <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#ad5e3521623338de49cfd62914bdcb2f7">GetPendingErrors()</a> to determine which specific operations failed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Callback to call upon flush completion. The <code>cb</code> must remain valid until it is invoked.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>In the case that the async version of this method is used, then the callback will be called upon completion of the operations which were buffered since the last flush. In other words, in the following sequence: </p><div class="fragment"><div class="line">session-&gt;Insert(a);</div>
 <div class="line">session-&gt;FlushAsync(callback_1);</div>
 <div class="line">session-&gt;Insert(b);</div>
@@ -439,16 +420,7 @@ This function is thread-safe.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This also means that, if FlushAsync is called twice in succession, with no intervening operations, the second flush will return immediately. For example: <div class="fragment"><div class="line">session-&gt;Insert(a);</div>
 <div class="line">session-&gt;FlushAsync(callback_1); <span class="comment">// called when &#39;a&#39; is inserted</span></div>
 <div class="line">session-&gt;FlushAsync(callback_2); <span class="comment">// called immediately!</span></div>
-</div><!-- fragment --> Note that, as in all other async functions in Kudu, the callback may be called either from an IO thread or the same thread which calls FlushAsync. The callback should not block.</dd>
-<dd>
-This function is thread-safe.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>Callback to report on flush results. The <code>cb</code> must remain valid until it is invoked. </td></tr>
-  </table>
-  </dd>
-</dl>
+</div><!-- fragment --> Note that, as in all other async functions in Kudu, the callback may be called either from an IO thread or the same thread which calls FlushAsync. The callback should not block. </dd></dl>
 
 </div>
 </div>
@@ -475,10 +447,11 @@ This function is thread-safe.</dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get information on errors from previous calls.</p>
+<p>Get information on errors from previous session activity.</p>
+<p>The information on errors are reset upon calling this method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">errors</td><td>Pointer to the container to full with error info objects. Caller takes ownership of the returned errors in the container. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">errors</td><td>Pointer to the container to fill with error info objects. Caller takes ownership of the returned errors in the container. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">overflowed</td><td>If there were more errors than could be held in the session's error storage, then <code>overflowed</code> is set to <code>true</code>.</td></tr>
   </table>
   </dd>
@@ -502,7 +475,7 @@ This function is thread-safe.</dd></dl>
 <p>Check if there are any pending operations in this session.</p>
 <dl class="section note"><dt>Note</dt><dd>This function is thread-safe.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if there are operations which have not yet been delivered to the cluster. This may include buffered operations (i.e. those that have not yet been flushed) as well as in-flight operations (i.e. those that are in the process of being sent to the servers).</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Maybe "incomplete" or "undelivered" is clearer? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Maybe "incomplete" or "undelivered" is clearer? </dd></dl>
 
 </div>
 </div>
@@ -511,7 +484,7 @@ This function is thread-safe.</dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduSession::SetExternalConsistencyMode </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduSession::SetExternalConsistencyMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aabd55109ba3b086bbe33b277cdd40d22">ExternalConsistencyMode</a>&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -526,7 +499,7 @@ This function is thread-safe.</dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -535,7 +508,7 @@ This function is thread-safe.</dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduSession::SetFlushMode </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduSession::SetFlushMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classkudu_1_1client_1_1_kudu_session.html#aaec3956e642610d703f3b83b78e24e19">FlushMode</a>&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
@@ -543,45 +516,44 @@ This function is thread-safe.</dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the flush mode</p>
-<p>REQUIRES: there should be no pending writes &ndash; call <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a64955abb5f5cc821b6e56354f733ce84">Flush()</a> first to ensure nothis is pending.</p>
+<p>Set the flush mode.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>There should be no pending writes &ndash; call <a class="el" href="classkudu_1_1client_1_1_kudu_session.html#a64955abb5f5cc821b6e56354f733ce84">Flush()</a> first to ensure nothing is pending.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>Flush mode to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>Flush mode to set. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation status </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation status. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a7b09e8bd7aa18a94c6ccfd1747df3650"></a>
+<a class="anchor" id="aefa9bbc51c27104ce103b9ecda3b8abf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Status kudu::client::KuduSession::SetMutationBufferSpace </td>
+          <td class="memname"><a class="el" href="classkudu_1_1_status.html">Status</a> kudu::client::KuduSession::SetMutationBufferSpace </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
+          <td class="paramname"><em>size_bytes</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the amount of buffer space used by this session for outbound writes</p>
+<p>Set the amount of buffer space used by this session for outbound writes.</p>
 <p>The effect of the buffer size varies based on the flush mode of the session: </p><ul>
-<li>AUTO_FLUSH_SYNC since no buffering is done, this has no effect </li>
-<li>AUTO_FLUSH_BACKGROUND if the buffer space is exhausted, then write calls will block until there is space available in the buffer </li>
+<li>AUTO_FLUSH_SYNC since no buffering is done, this has no effect. </li>
+<li>AUTO_FLUSH_BACKGROUND if the buffer space is exhausted, then write calls will block until there is space available in the buffer. </li>
 <li>MANUAL_FLUSH if the buffer space is exhausted, then write calls will return an error</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of the buffer space to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size_bytes</td><td>Size of the buffer space to set (number of bytes). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation result status</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>specify the unit of measurement for the <code>size</code> parameter </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation result status. </dd></dl>
 
 </div>
 </div>
@@ -598,7 +570,7 @@ This function is thread-safe.</dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the timeout for writes made in this session</p>
+<p>Set the timeout for writes made in this session.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">millis</td><td>Timeout to set in milliseconds; should be greater than 0. </td></tr>
@@ -609,7 +581,7 @@ This function is thread-safe.</dd></dl>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/aserbin/Projects/kudu/src/kudu/client/<a class="el" href="client_8h_source.html">client.h</a></li>
+<li>include/kudu/client/<a class="el" href="client_8h_source.html">client.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

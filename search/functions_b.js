@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['name',['name',['../classkudu_1_1client_1_1_kudu_table.html#aa0f8b6d63c800727c3a827945512555e',1,'kudu::client::KuduTable']]],
-  ['newcomparisonpredicate',['NewComparisonPredicate',['../classkudu_1_1client_1_1_kudu_table.html#aed6c3571aff35270a3e6cd66770f1cea',1,'kudu::client::KuduTable']]],
-  ['newdelete',['NewDelete',['../classkudu_1_1client_1_1_kudu_table.html#ad873078bdbcafe015d359a65c370a89a',1,'kudu::client::KuduTable']]],
-  ['newinsert',['NewInsert',['../classkudu_1_1client_1_1_kudu_table.html#a0c78f86c5d0fbf53437c2c9db26f92b6',1,'kudu::client::KuduTable']]],
-  ['newsession',['NewSession',['../classkudu_1_1client_1_1_kudu_client.html#a1f5b9bf8767b44f03f4d3220dfd5f925',1,'kudu::client::KuduClient']]],
-  ['newtablealterer',['NewTableAlterer',['../classkudu_1_1client_1_1_kudu_client.html#a116bbcf13dc0991ad2a3129630075aea',1,'kudu::client::KuduClient']]],
-  ['newtablecreator',['NewTableCreator',['../classkudu_1_1client_1_1_kudu_client.html#a003f13604b4fb378f61e133a9b49d153',1,'kudu::client::KuduClient']]],
-  ['newupdate',['NewUpdate',['../classkudu_1_1client_1_1_kudu_table.html#a7e95271452d608fc2b563f7b46ddcda8',1,'kudu::client::KuduTable']]],
-  ['newupsert',['NewUpsert',['../classkudu_1_1client_1_1_kudu_table.html#a19e92dbaeeff86c5d707b15b2a7051fc',1,'kudu::client::KuduTable']]],
-  ['nextbatch',['NextBatch',['../classkudu_1_1client_1_1_kudu_scanner.html#a409a42496942e93df5f4879b7a348e87',1,'kudu::client::KuduScanner::NextBatch(std::vector&lt; KuduRowResult &gt; *rows)'],['../classkudu_1_1client_1_1_kudu_scanner.html#af1475d9a0667839c1ed9c3714b47d487',1,'kudu::client::KuduScanner::NextBatch(KuduScanBatch *batch)']]],
-  ['num_5freplicas',['num_replicas',['../classkudu_1_1client_1_1_kudu_table_creator.html#a9dd4673755ba242eab3f06b19182d139',1,'kudu::client::KuduTableCreator']]]
+  ['master_5fserver_5faddrs',['master_server_addrs',['../classkudu_1_1client_1_1_kudu_client_builder.html#a0c1b92afad7a6e21c5ea781fb7d42114',1,'kudu::client::KuduClientBuilder']]],
+  ['max',['Max',['../classkudu_1_1_mono_time.html#a28d08092b30ccefc5e45a6e228034ef9',1,'kudu::MonoTime']]],
+  ['memory_5ffootprint_5fexcluding_5fthis',['memory_footprint_excluding_this',['../classkudu_1_1_status.html#a6dd1852c4c78a3c6d8ace5155546db93',1,'kudu::Status']]],
+  ['memory_5ffootprint_5fincluding_5fthis',['memory_footprint_including_this',['../classkudu_1_1_status.html#a7a2d4eb7636a485b5b2cc42f0b8ad627',1,'kudu::Status']]],
+  ['message',['message',['../classkudu_1_1_status.html#a3547012ea31cc504141f2222eec38857',1,'kudu::Status']]],
+  ['min',['Min',['../classkudu_1_1_mono_time.html#acf4fc0351fe9245431932e481e002b99',1,'kudu::MonoTime']]],
+  ['monodelta',['MonoDelta',['../classkudu_1_1_mono_delta.html#ad0646900f0927ad9be6302fcda8bfe5f',1,'kudu::MonoDelta']]],
+  ['monotime',['MonoTime',['../classkudu_1_1_mono_time.html#a8f49b7fd2e217b5541d4ce45bda63bd4',1,'kudu::MonoTime']]],
+  ['morethan',['MoreThan',['../classkudu_1_1_mono_delta.html#a218cc5fcd3ce70365210b7c5587aa6ff',1,'kudu::MonoDelta']]],
+  ['mutable_5fdata',['mutable_data',['../classkudu_1_1_slice.html#a2771156d34daa166067b8d319ad7d164',1,'kudu::Slice']]],
+  ['mutable_5frow',['mutable_row',['../classkudu_1_1client_1_1_kudu_write_operation.html#a8889770ce62e2ca0ce5d55c9c90af6bc',1,'kudu::client::KuduWriteOperation']]]
 ];

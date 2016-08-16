@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['id',['id',['../classkudu_1_1client_1_1_kudu_table.html#a185ff8f18b9bea6b41d6f4cf8dfa1377',1,'kudu::client::KuduTable']]],
-  ['intokuduscanner',['IntoKuduScanner',['../classkudu_1_1client_1_1_kudu_scan_token.html#adb95c9538bb1fc4c83963557ce487292',1,'kudu::client::KuduScanToken']]],
-  ['isaltertableinprogress',['IsAlterTableInProgress',['../classkudu_1_1client_1_1_kudu_client.html#a7a331e528759296089837b4611c01809',1,'kudu::client::KuduClient']]],
-  ['iscreatetableinprogress',['IsCreateTableInProgress',['../classkudu_1_1client_1_1_kudu_client.html#a2f0323b439d8658b2ac31fde7f46de63',1,'kudu::client::KuduClient']]],
-  ['ismultimaster',['IsMultiMaster',['../classkudu_1_1client_1_1_kudu_client.html#a6f52dff0717d6e96863aff068bfb3795',1,'kudu::client::KuduClient']]]
+  ['hasmorerows',['HasMoreRows',['../classkudu_1_1client_1_1_kudu_scanner.html#ab04c2012970498590d2d2034d6a44d34',1,'kudu::client::KuduScanner']]],
+  ['haspendingoperations',['HasPendingOperations',['../classkudu_1_1client_1_1_kudu_session.html#a3f224e9b95f86da7e1f2ea6fcf327756',1,'kudu::client::KuduSession']]],
+  ['hostname',['hostname',['../classkudu_1_1client_1_1_kudu_tablet_server.html#a24267a240220ed35ffe2b830899edb14',1,'kudu::client::KuduTabletServer']]]
 ];
